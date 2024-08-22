@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/perfilPantalla"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PerfilActivity"
+    android:background="@drawable/fondo_estrellado">
+
+    <RelativeLayout
+        android:id="@+id/perfil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="4dp">
+
+        <ImageButton
+            android:id="@+id/btnVolver"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="11dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/flecha"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:onClick="volver"/>
+
+        <ImageView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/perfil" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/contenedorDatos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/perfil"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginEnd="10dp">
+
+        <TextView
+            android:id="@+id/nombre1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="Nombre de usuario"
+            android:textStyle="bold"
+            android:textColor="@color/rosa_palido"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/usuarioNombre"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/nombre1"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/contorno_cuadrado"
+            android:enabled="false"
+            android:gravity="center"
+            android:layout_marginHorizontal="20dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="15dp"
+            android:text="Patrick"
+            android:textColor="@color/rosa_palido"
+            android:textColorHint="@color/rosa_palido"
+
+            android:textSize="20dp" />
+
+
+
+        <TextView
+            android:id="@+id/contra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_below="@+id/usuarioNombre"
+            android:text="Contraseña"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/azul"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/contrasena"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/contra"
+            android:gravity="center"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="13dp"
+            android:enabled="false"
+            android:focusable="false"
+            android:cursorVisible="false"
+            android:editable="false"
+            android:background="@drawable/contorno_azul"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="15dp"
+            android:text="12345"
+            android:textColor="@color/azul"
+            android:textColorHint="@color/azul"
+            android:textSize="20dp" />
+
+
+        <TextView
+            android:id="@+id/fehca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_below="@+id/contrasena"
+            android:text="Fecha de Nacimiento"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/amarillo"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/fechaNacimiento"
+            android:layout_width="350dp"
+            android:gravity="center"
+            android:layout_marginHorizontal="20dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="40dp"
+            android:layout_below="@+id/fehca"
+            android:enabled="false"
+            android:focusable="false"
+            android:cursorVisible="false"
+            android:editable="false"
+            android:background="@drawable/contorno_amarillo"
+            android:textColor="@color/amarillo"
+            android:textColorHint="@color/amarillo"
+            android:text="17/10/2003"
+            android:paddingTop="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="15dp"
+            android:textSize="20dp"
+            android:paddingLeft="15dp"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contenedorDatos">
+
+        <Switch
+            android:id="@+id/switchSound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Sound"
+            android:backgroundTint="@color/white"
+            android:layout_centerHorizontal="true"
+            android:checked="false"/> <!-- Inicialmente el sonido está activado -->
+
+        <ImageView
+            android:id="@+id/soundImage"
+            android:layout_width="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="50dp"
+            android:layout_below="@id/switchSound"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/sonido" /> <!-- Imagen inicial del sonido activado -->
+
+        <Button
+            android:id="@+id/btnAyuda"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/soundImage"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="51dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="59dp"
+            android:backgroundTint="@color/amarillo"
+            android:gravity="center"
+            android:text="Ayuda"
+            android:onClick="mostrarLink"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

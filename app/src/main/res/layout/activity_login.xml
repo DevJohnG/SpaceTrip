@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoginActivity"
+    android:background="@drawable/fondo_estrellado">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="4dp">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="115dp"
+                android:src="@drawable/space" />
+
+            <RelativeLayout
+                android:id="@+id/contenedorLogo"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/logo"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/contorno_login">
+
+                <EditText
+                    android:id="@+id/usuarioCuenta"
+                    android:layout_width="280dp"
+                    android:layout_height="51dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Introduzca su correo"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="15dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/contenedorLogo2"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_below="@+id/contenedorLogo"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/contorno_login">
+
+                <EditText
+                    android:id="@+id/contrasenaCuenta"
+                    android:layout_width="280dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:hint="Contraseña"
+                    android:inputType="textPassword"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnIngresar"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/contenedorLogo2"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="51dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="38dp"
+                android:layout_marginEnd="59dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:backgroundTint="@color/amarillo"
+                android:text="Iniciar Sesion"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/btnCrearCuenta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnIngresar"
+                android:text="Crear Cuenta"
+                android:textColor="@color/amarillo"
+                android:textSize="20dp"
+                android:background="@android:color/transparent"
+                android:gravity="center" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

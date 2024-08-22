@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_estrellado">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <ImageButton
+            android:id="@+id/btnVolver"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/flecha"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgPlanetaDetalle"
+            android:layout_width="298dp"
+            android:layout_height="237dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/tierra" />
+
+        <TextView
+            android:id="@+id/txtNombreDetalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Planeta Tierra"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:layout_below="@id/imgPlanetaDetalle"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/txtDistanciaMin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="Distancia mínima a la tierra: "
+            android:layout_below="@id/txtNombreDetalle"
+            android:layout_marginTop="8dp"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/txtDistanciaMinDetalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="77 millones de km"
+            android:textSize="16dp"
+            android:layout_below="@id/txtDistanciaMin"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/txtDistanciaMax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Distancia máxima a la tierra: "
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_below="@id/txtDistanciaMinDetalle"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/txtDistanciaMaxDetalle"
+            android:layout_width="352dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtDistanciaMax"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="43dp"
+            android:text="152.1 millones de km "
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/txtDiametro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diámetro: "
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_below="@id/txtDistanciaMaxDetalle"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/txtDiametroDetalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12,742 km"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@id/txtDiametro"
+            android:layout_below="@id/txtDistanciaMaxDetalle"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/txtGravedad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gravedad: "
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_below="@id/txtDiametroDetalle"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/txtGravedadDetalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="9.81 m/s²"
+            android:textSize="16dp"
+            android:layout_toRightOf="@id/txtDiametro"
+            android:layout_below="@id/txtDiametroDetalle"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/txtTemperatura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Temperatura Promedio: "
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_below="@id/txtGravedadDetalle"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/txtTemperaturaDetalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15°C"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:layout_toRightOf="@id/txtTemperatura"
+            android:layout_below="@id/txtGravedadDetalle"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/txtAgua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Presencia de agua: "
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_below="@id/txtTemperaturaDetalle"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/txtAguaDetalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="Sí"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@+id/txtAgua"
+            android:layout_below="@id/txtTemperaturaDetalle"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/txtComposicion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Composición: "
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_below="@id/txtAguaDetalle"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/txtComposicionDetalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Agua y Tierra"
+            android:textSize="16dp"
+            android:layout_toRightOf="@+id/txtComposicion"
+            android:layout_below="@id/txtAguaDetalle"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/txtLunas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lunas: "
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_below="@id/txtComposicionDetalle"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/txtLunasDetalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@+id/txtLunas"
+            android:layout_below="@id/txtComposicionDetalle"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/txtDuracionDia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duración del día:  "
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_below="@id/txtLunasDetalle"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/txtDuracionDiaDetalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="1 Día Terrestre"
+            android:textSize="16dp"
+            android:layout_toRightOf="@+id/txtDuracionDia"
+            android:layout_below="@id/txtLunasDetalle"
+            android:layout_marginTop="8dp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

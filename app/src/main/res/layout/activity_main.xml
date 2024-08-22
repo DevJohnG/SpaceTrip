@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+
+    <TextView
+        android:id="@+id/heightTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Height: 0 meters"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:padding="16dp" />
+
+    <com.example.spacetrip.activity.GameView
+        android:id="@+id/gameSurfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/heightTextView"
+        android:background="@drawable/space_background" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="50dp"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/retryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Retry"
+            android:backgroundTint="@color/rosa_palido"
+            android:textColor="@color/black"
+            android:visibility="gone"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/navigateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Regresar"
+            android:visibility="gone"
+            android:textColorHint="@color/black"
+            android:backgroundTint="@color/azul"
+            android:layout_toEndOf="@id/retryButton"
+            android:layout_marginStart="8dp" />
+    </RelativeLayout>
+</RelativeLayout>

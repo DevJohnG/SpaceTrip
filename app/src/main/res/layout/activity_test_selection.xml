@@ -1,0 +1,151 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/fondo_estrellado"
+    tools:context=".TestActivity">
+
+    <ImageButton
+        android:id="@+id/exit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|top"
+        android:background="@android:color/transparent"
+        android:src="@drawable/flecha"
+        android:contentDescription="exit" />
+
+    <!-- Contenido principal centrado -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/titulotest"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/testtitle"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:id="@+id/sol"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/sol" />
+
+            <TextView
+                android:id="@+id/titulosolar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"
+                android:text="Sistema Solar"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:fontFamily="monospace"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/test1_button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="INICIAR"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+            style="@style/ColoredBorderButton" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/alphacentauri"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/interrogacion" />
+
+            <TextView
+                android:id="@+id/titulocenta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"
+                android:text="Alpha Centauri"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:fontFamily="monospace"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/test2_button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="PRÓXIMAMENTE"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+            style="@style/ColoredBorderButton"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:id="@+id/barnard"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/interrogacion" />
+
+            <TextView
+                android:id="@+id/titulobarnard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"
+                android:text="Sistema Barnard"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:fontFamily="monospace"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/test3_button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="PRÓXIMAMENTE"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:fontFamily="monospace"
+            style="@style/ColoredBorderButton" />
+    </LinearLayout>
+
+</FrameLayout>

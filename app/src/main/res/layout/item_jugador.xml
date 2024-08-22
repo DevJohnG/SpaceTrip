@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/contorno_cuadrado"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/usernameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="Username"
+        android:textSize="20dp"
+        android:textColor="@color/rosa_palido"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/puntosTotalesTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="Puntos Totales"
+        android:textSize="18dp"
+        android:visibility="invisible"
+        android:textColor="@color/azul"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/topAlturaTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="Top Altura"
+        android:textSize="18dp"
+        android:textColor="@color/amarillo"
+        android:gravity="center" />
+</LinearLayout>

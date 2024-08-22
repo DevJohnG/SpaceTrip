@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.GameActivity"
+    android:background="@drawable/fondo_estrellado">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/btnConfiguraciones"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/confi"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:onClick="ajustes"/>
+
+            <ImageButton
+                android:id="@+id/btnRanking"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="32dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/crown"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.045"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:onClick="ranking"/>
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+                android:layout_marginTop="88dp"
+                android:src="@drawable/space"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/cohete"
+                android:layout_width="40dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="236dp"
+                android:background="@android:color/transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:scaleType="centerCrop"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+            <ImageButton
+                android:id="@+id/btnLogros"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="12dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/logros"
+                app:layout_constraintBottom_toTopOf="@+id/imageButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:onClick="logros"/>
+
+            <ImageButton
+                android:id="@+id/btnPlay"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="44dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/play"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cohete"
+                android:onClick="play"/>
+
+            <ImageButton
+                android:id="@+id/btnTest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/foco"
+                app:layout_constraintBottom_toTopOf="@+id/imageButton2"
+                app:layout_constraintEnd_toStartOf="@+id/btnPlay"
+                app:layout_constraintHorizontal_bias="0.252"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cohete"
+                app:layout_constraintVertical_bias="0.0"
+                android:onClick="test"/>
+
+            <ImageButton
+                android:layout_width="65dp"
+                android:layout_height="11dp"
+                android:layout_marginTop="12dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/juego"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnPlay" />
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="99dp"
+                android:layout_height="11dp"
+                android:layout_marginTop="12dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/logrossub"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.951"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnPlay" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/jaja"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnPlay" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

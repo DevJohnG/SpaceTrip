@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LogrosActivity"
+    android:background="@drawable/fondo_estrellado">
+
+    <RelativeLayout
+        android:id="@+id/contenedorR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="4dp">
+
+        <ImageButton
+            android:id="@+id/btnVolver"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="25dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/flecha"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:onClick="volver" />
+
+        <ImageView
+            android:id="@+id/logros"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="55dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/logros_title" />
+
+        <ListView
+            android:id="@+id/customListView"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logros"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginEnd="18dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

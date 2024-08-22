@@ -1,0 +1,16 @@
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="naranja">#f16452 </color>
+    <color name="cian">#84f6f6</color>
+    <color name="rosa">#d458e2 </color>
+    <color name="azul">#41c8df</color>
+    <color name="purple">#834feb</color>
+    <color name="amarillo">#fce17c</color>
+    <color name="rosa_palido">#f19ed1</color>
+    <color name="fucsia">#dc428f</color>
+</resources>
+

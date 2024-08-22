@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="20dp"
+    android:background="@drawable/fondo_estrellado"
+    >
+    <ImageButton
+        android:id="@+id/btnVolver"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="11dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/flecha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="volver"/>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="30dp"
+        android:src="@drawable/registrar" />
+
+    <EditText
+        android:id="@+id/txtnombreUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:layout_marginLeft="10dp"
+        android:hint="Nombre de Usuario"
+        android:background="@drawable/contorno_regis"
+        android:textColorHint="@color/rosa_palido"
+        android:paddingLeft="10dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="14dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="15dp"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/txtCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtnombreUsuario"
+        android:layout_marginLeft="10dp"
+        android:hint="Correo"
+        android:background="@drawable/contorno_azul"
+        android:textColorHint="@color/azul"
+        android:paddingLeft="10dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="14dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="15dp"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/txtcontraseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtCorreo"
+        android:layout_marginLeft="10dp"
+        android:hint="Contraseña"
+        android:background="@drawable/contorno_amarillo"
+        android:textColorHint="@color/amarillo"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="14dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/white"
+        android:paddingBottom="15dp"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/txtcontraseñaVerificar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtcontraseña"
+        android:layout_marginLeft="10dp"
+        android:hint="Repetir contraseña"
+        android:paddingLeft="10dp"
+        android:inputType="textPassword"
+        android:background="@drawable/contorno_amarillo"
+        android:textColorHint="@color/amarillo"
+        android:layout_marginTop="14dp"
+        android:textColor="@color/white"
+        android:paddingTop="10dp"
+        android:paddingBottom="15dp"
+        android:textSize="20dp" />
+
+
+    <EditText
+        android:id="@+id/txtEdad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtcontraseñaVerificar"
+        android:layout_marginLeft="10dp"
+        android:hint="Fecha de nacimiento"
+        android:paddingLeft="10dp"
+        android:textColor="@color/white"
+        android:background="@drawable/contorno_regis"
+        android:textColorHint="@color/rosa_palido"
+        android:layout_marginTop="14dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="15dp"
+        android:inputType="text"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btnCrearCuenta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtEdad"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="@color/fucsia"
+        android:paddingTop="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:paddingBottom="10dp"
+        android:text="Crear Cuenta"
+        android:textColor="@color/white"
+        android:textSize="20dp">
+
+    </Button>
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PruebaDeJuego</string>
+        <string-array name="age_ranges">
+            <item>5-10</item>
+            <item>10-18</item>
+            <item>18-24</item>
+            <item>25-34</item>
+            <item>35-44</item>
+            <item>45-54</item>
+            <item>55-64</item>
+            <item>65+</item>
+        </string-array>
+    </resources>
